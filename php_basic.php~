@@ -1,0 +1,152 @@
+<?php
+	require "DB.php";
+	require "class.ezpdf.php";
+	
+	$doc =& new Cezpdf();
+	$doc->ezText("Helo, world");
+	$doc->ezStream();
+?>
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<meta name="Microsoft Theme" content="sky 1011, default">
+</head>
+
+<body>
+<?php
+
+	error_reporting(E_ALL);
+//	ignore_repeated_errors = On;
+  print "hello world
+  ";
+  
+  $var = "variable";
+  
+  print "<br>this is a $var \n \r
+  ";
+  
+  $var = strtoupper($var);
+  echo "<b>" , "this is a {$var}too" , "</b>";
+  
+  $i = 10;
+  for ($j = 0; $j < $i; $j++)
+  {
+     echo $j, " ";
+  }
+  
+
+?>
+<p>
+
+<?php
+   $arr = array();
+   $arr[] = "first";
+   $arr[] = "second";
+   $arr[] = "third";
+   $arr[] = "fourth";
+   
+   print ($arr);
+   
+
+
+
+   print "<pre>";
+   print_r($arr);
+   print "</pre>";
+  
+   unset($arr[1]); 
+   print "<pre>";
+   print_r($arr);
+   print "</pre>";
+
+	$arr[1] = "second";
+   print "<pre>";
+   var_dump($arr);
+   print "</pre>";
+
+   // associative arrays
+   print "associative arrays \n";
+   $assarr["first"] = 1;
+   $assarr["second"] = 2;
+   
+   
+   print "<pre>";
+   print_r($assarr);
+   print "</pre>";
+
+	foreach ($assarr as $value)
+	{
+	   print "$value <br>";
+	}
+    foreach ($assarr as $key => $value)
+	{
+	   print "$key = $value <br>";
+	}
+
+	print "<br><br>";
+	$arrTest = array("a", "b", "c", "d",
+				"a", "b", "c", "d",
+				"a", "b", "c", "d");
+
+	print "array_keys and array_values<br>\n";
+	print_r (array_keys($arrTest));
+	print_r (array_values($arrTest));
+	
+    function ArrayFrequency($arr, $value)
+    {
+
+		$arrFrequency = array_count_values($arr);
+		return $arrFrequency[$value];
+    }
+    				
+	print "there are " . count($arrTest) . " elements in the array and " . ArrayFrequency($arrTest, "a") . " of them are 'a' <br>";
+	
+	$arr = array_fill(5, 10, "contents");
+	print_r($arr);
+	print "<br>";
+	$arr = range( 1, 10 );
+	print_r($arr);
+	print "<br>";
+
+	$arr = range( "a", "m" );
+	print_r($arr);
+	print "<br>";
+
+?>
+
+<?php
+
+	class TestClass
+	{
+	    var $m_a;
+	    var $m_b;
+	    
+	    /* only in PHP5
+		function __construct()
+		{
+			print "constructing";
+			
+		}
+		
+		function __destruct()
+		{
+			print "destructing";
+		}
+		*/
+	}
+
+    $clTest = new TestClass();
+    
+    unset($clTest);
+?>
+
+
+
+
+</body>
+
+</html>
