@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <h1>index hello</h>
+<<<<<<< HEAD
+<p>world test</p>
+=======
+<p>world</p>
+>>>>>>> 43cd421b9537fc8cae995ea4424b059a5a9cda9c
+</body>
+</html>
