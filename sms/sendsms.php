@@ -15,9 +15,10 @@
 	$DEBUGLEVEL = $DEBUGTRACE;
 
 	DebugMsg($DEBUGTRACE, "before sms send");
-        DebugMsg($DEBUGTRACE, $client);
 
-	TextToNumber('+14582243324', "hello sms world!");
+  	print $DEBUGLEVEL . "debuglevel\n" . $DEBUGTRACE . "debugtrace\n";
+	
+	TextToNumber('+14257854866', "hello sms world!");
         DebugMsg($DEBUGTRACE, "after sms send");
 
 ?>
