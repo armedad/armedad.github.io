@@ -1,0 +1,8 @@
+<?php
+	function DebugMsg($num, $msg) {
+		 global $DEBUGLEVEL;
+		 if ($num > $DEBUGLEVEL) {
+		    print "DEBUGMSG: " . $msg . "\n";
+		 }
+	}
+?>

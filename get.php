@@ -32,15 +32,43 @@
 
 // http://www.thechewfamily.com/subsite/get.php?Arg1=Christine&Arg2=Chee
 // http://www.thechewfamily.com/subsite/get.php?Arg1[]=Christine&Arg1[]=Chee
-	print "input arg1 is {$_GET["Arg1"]}\n";
+	print "version 1<br>input arg1 is {$_GET["Arg1"]}<br>\n";
 	print_r ($_GET);
 	
 	
-	printf ("post: \n");
+	printf ("post: <br>\n");
 	print_r ($_POST);
+
+	if (isset($_SERVER["PHP_AUTH_USER"])) {
+	   print "php_auth_user is set <br>";
+	} else {
+	   print "php_auth_user is NOT set <br>";
+	}
+
+
+	print "	_SERVER[PHP_AUTH_PW]:";
+	print_r ($_SERVER["PHP_AUTH_PW"]);
+	print "<br>\n";
+	print "	_SERVER[PHP_AUTH_USER]:";
+	print_r ($_SERVER["PHP_AUTH_USER"]);
+	print "<br>\n";
+
+	unset($_SERVER["PHP_AUTH_PW"]);
+	unset($_SERVER["PHP_AUTH_USER"]);
 	
-	$_SERVER["PHP_AUTH_PW"] = "testpw";
-	$_SERVER["PHP_AUTH_USER"] = "user";
+	if (isset($_SERVER["PHP_AUTH_USER"])) {
+	   print "php_auth_user is set <br>";
+	} else {
+	   print "php_auth_user is NOT set <br>";
+	}
+	print "	_SERVER[PHP_AUTH_PW]:";
+	print_r ($_SERVER["PHP_AUTH_PW"]);
+	print "<br>\n";
+	
+	print "	_SERVER[PHP_AUTH_USER]:";
+	print_r ($_SERVER["PHP_AUTH_USER"]);
+	print "<br>\n";
+
 	
 	print "<br><br>";
 	   	print_r($_SERVER);
