@@ -9,7 +9,6 @@
         global $DEBUGTRACE;
         global $client;
   
-  	print $DEBUGLEVEL . " debuglevel \n" . $DEBUGTRACE . " debugtrace\n";
 	DebugMsg($DEBUGTRACE, "Enter TextToNumber");
 	$msgContent = array(
 		// A Twilio phone number you purchased at twilio.com/console

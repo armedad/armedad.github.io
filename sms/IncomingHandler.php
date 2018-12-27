@@ -1,5 +1,5 @@
 <?php
-	require "init.php";
+	require_once "init.php";
 ?>
 <?php
 
@@ -23,6 +23,6 @@ if (strtolower($body) == 'never gonna') {
     $response->message($default);
 }
 print $response;
-
-
+  /// text to game control
+  TextGameControl("IncomingHandler body: " . $body . "\n" . $response);
 ?>
