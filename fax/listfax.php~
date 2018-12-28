@@ -1,0 +1,15 @@
+<?php
+
+	require_once "init.php";
+
+
+?>
+<html>
+
+<body>
+<?php
+
+
+?>
+</body>
+</html>

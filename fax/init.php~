@@ -2,18 +2,17 @@
   $rootdir =  __DIR__ . "/..";
 
   require_once $rootdir . "/debug.php";
-  require_once $rootdir . "/mytwilio.php";
+  require_once $rootdir . "/sms.php";
 
   function TextToNumber($number, $msg) {
         global $DEBUGLEVEL;
         global $DEBUGTRACE;
         global $client;
-        global $twilioNumber;
   
-	DebugMsg($DEBUGTRACE, "Enter TextToNumber: twilioNumber: " . $twilioNumber . " msg: " . $msg);
+	DebugMsg($DEBUGTRACE, "Enter TextToNumber");
 	$msgContent = array(
 		// A Twilio phone number you purchased at twilio.com/console
-		'from' => $twilioNumber,
+		'from' => '+14582243324',
 		// the body of the text message you'd like to send
 		'body' => $msg
 	);
