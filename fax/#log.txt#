@@ -1,0 +1,77 @@
+
+FX5c0e07ba3e16c81aad998acb991fbbac
+
+Notice: Array to string conversion in
+/home1/bbbm8o0/public_html/fax/listfax.php on line 17 DEBUGMSG: faxes
+are Array Array ( [0] => Twilio\Rest\Fax\V1\FaxInstance Object (
+[_media:protected] => [version:protected] => Twilio\Rest\Fax\V1 Object
+( [_faxes:protected] => Twilio\Rest\Fax\V1\FaxList Object (
+[version:protected] => Twilio\Rest\Fax\V1 Object *RECURSION*
+[solution:protected] => Array ( ) [uri:protected] => /Faxes )
+[domain:protected] => Twilio\Rest\Fax Object ( [_v1:protected] =>
+Twilio\Rest\Fax\V1 Object *RECURSION* [client:protected] =>
+Twilio\Rest\Client Object ( [username:protected] =>
+AC19754b7c0d0e411972e197f23b59a2a7 [password:protected] =>
+df1e938987a1dafb923adf77414a8b6f [accountSid:protected] =>
+AC19754b7c0d0e411972e197f23b59a2a7 [region:protected] =>
+[httpClient:protected] => Twilio\Http\CurlClient Object (
+[curlOptions:protected] => Array ( ) [debugHttp:protected] =>
+[lastRequest] => Array ( [10002] => https://fax.twilio.com/v1/Faxes
+[42] => 1 [19913] => 1 [14] => [10023] => Array ( [0] => User-Agent:
+twilio-php/5.27.0 (PHP 7.0.33) [1] => Accept-Charset: utf-8 [2] =>
+Accept: application/json [3] => Authorization: Basic
+QUMxOTc1NGI3YzBkMGU0MTE5NzJlMTk3ZjIzYjU5YTJhNzpkZjFlOTM4OTg3YTFkYWZiOTIzYWRmNzc0MTRhOGI2Zg==
+) [13] => 60 [80] => 1 ) [lastResponse] => Twilio\Http\Response Object
+( [headers:protected] => Array ( [Access-Control-Allow-Credentials] =>
+true [Access-Control-Allow-Headers] => Accept, Authorization,
+Content-Type, If-Match, If-Modified-Since, If-None-Match,
+If-Unmodified-Since [Access-Control-Allow-Methods] => GET, POST,
+DELETE, OPTIONS [Access-Control-Allow-Origin] => *
+[Access-Control-Expose-Headers] => ETag [Content-Type] =>
+application/json; charset=utf-8 [Date] => Sat, 29 Dec 2018 19:57:28
+GMT [Strict-Transport-Security] => max-age=31536000
+[Twilio-Concurrent-Requests] => 1 [Twilio-Request-Duration] => 0.046
+[Twilio-Request-Id] => RQ6a73630fa4a6442f9f04d444ab15d675
+[X-Powered-By] => AT-5000 [X-Shenanigans] => none [Content-Length] =>
+842 [Connection] => keep-alive ) [content:protected] => {"meta":
+{"page": 0, "page_size": 50, "first_page_url":
+"https://fax.twilio.com/v1/Faxes?PageSize=50&Page=0",
+"previous_page_url": null, "url":
+"https://fax.twilio.com/v1/Faxes?PageSize=50&Page=0", "next_page_url":
+null, "key": "faxes"}, "faxes": [{"media_sid": null, "status":
+"failed", "direction": "outbound", "from": "+17608243324",
+"date_updated": "2018-12-29T19:56:43Z", "price": null, "account_sid":
+"AC19754b7c0d0e411972e197f23b59a2a7", "to": "+14257854866",
+"date_created": "2018-12-29T19:56:43Z", "url":
+"https://fax.twilio.com/v1/Faxes/FX5c0e07ba3e16c81aad998acb991fbbac",
+"sid": "FX5c0e07ba3e16c81aad998acb991fbbac", "duration": null,
+"num_pages": null, "quality": "fine", "price_unit": null,
+"api_version": "v1", "media_url": null, "links": {"media":
+"https://fax.twilio.com/v1/Faxes/FX5c0e07ba3e16c81aad998acb991fbbac/Media"}}]}
+[statusCode:protected] => 200 ) ) [_account:protected] =>
+[_accounts:protected] => [_api:protected] => [_authy:protected] =>
+[_autopilot:protected] => [_chat:protected] => [_fax:protected] =>
+Twilio\Rest\Fax Object *RECURSION* [_ipMessaging:protected] =>
+[_lookups:protected] => [_monitor:protected] => [_notify:protected] =>
+[_preview:protected] => [_pricing:protected] => [_proxy:protected] =>
+[_taskrouter:protected] => [_trunking:protected] => [_video:protected]
+=> [_messaging:protected] => [_wireless:protected] =>
+[_sync:protected] => [_studio:protected] => [_verify:protected] =>
+[_voice:protected] => ) [baseUrl:protected] => https://fax.twilio.com
+) [version:protected] => v1 ) [context:protected] =>
+[properties:protected] => Array ( [sid] =>
+FX5c0e07ba3e16c81aad998acb991fbbac [accountSid] =>
+AC19754b7c0d0e411972e197f23b59a2a7 [from] => +17608243324 [to] =>
++14257854866 [quality] => fine [mediaSid] => [mediaUrl] => [numPages]
+=> [duration] => [status] => failed [direction] => outbound
+[apiVersion] => v1 [price] => [priceUnit] => [dateCreated] => DateTime
+Object ( [date] => 2018-12-29 19:56:43.000000 [timezone_type] => 2
+[timezone] => Z ) [dateUpdated] => DateTime Object ( [date] =>
+2018-12-29 19:56:43.000000 [timezone_type] => 2 [timezone] => Z )
+[links] => Array ( [media] =>
+https://fax.twilio.com/v1/Faxes/FX5c0e07ba3e16c81aad998acb991fbbac/Media
+) [url] =>
+https://fax.twilio.com/v1/Faxes/FX5c0e07ba3e16c81aad998acb991fbbac )
+[solution:protected] => Array ( [sid] =>
+FX5c0e07ba3e16c81aad998acb991fbbac ) ) )
+FX5c0e07ba3e16c81aad998acb991fbbac

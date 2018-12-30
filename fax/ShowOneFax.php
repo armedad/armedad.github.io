@@ -1,22 +1,11 @@
-<?php
-
-	require_once "init.php";
-
-$DEBUGLEVEL = $DEBUGTRACE;
-?>
 <html>
+<?php
+require_once "init.php";
+?>
 
 <body>
 
-<?php
-
-$samplepdf = "https://drive.google.com/file/d/1NtGnW3Besh-VD9bpp8iJL-9ecGaAqNI5/view?usp=sharing";
-
-$faxes = $twilio->fax->v1->faxes
-                         ->read();
-
-
-?>
+<a href="listfax.php">Go back to full list of faxes.</a> <br>
 
 <table border=1>
 <tr>
@@ -30,10 +19,12 @@ $faxes = $twilio->fax->v1->faxes
 <th>price</th>
 </tr>
 
-<?php
 
-foreach ($faxes as $record) {
-    $url = "ShowOneFax.php?sidFax=" . $record->sid;
+<?php
+$sid_fax = $_GET["sidFax"];
+$record = $twilio->fax->v1->faxes($sid_fax)->fetch();
+
+    $url = $record->url;
 
     print "<tr>\n";
     
@@ -73,25 +64,24 @@ foreach ($faxes as $record) {
     print "<td>\n";
     print($record->price);
     print "</td>\n";
-
     print "</tr>\n";
 
-    print "<br>\n";
-}
-
-print "<br>\n";
-
-/*
-foreach ($faxes as $record) {
-    print "<hr>\n";
-    print_r($record);
-    print "<br>\n";
-}
-*/
 
 ?>
 
 </table>
+
+<br>
+<br>
+<br>
+<br>
+    <br>
+    <font size=1>
+    <?php
+print_r ($record);
+    ?>
+    </font>
+
 
 </body>
 </html>
