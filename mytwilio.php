@@ -8,11 +8,11 @@ use Twilio\Rest\Client;
 
 
 // Your Account SID and Auth Token from twilio.com/console
-$sid = 'AC19754b7c0d0e411972e197f23b59a2a7';
-$token = 'df1e938987a1dafb923adf77414a8b6f';
+$sid = '';
+$token = '';
 $client = new Client($sid, $token);
-//$twilioNumber = '+14582243324';
-$twilioNumber = '+17608243324';
+//$twilioNumber = '+';
+$twilioNumber = '+';
 $twilio = $client;
 
 
